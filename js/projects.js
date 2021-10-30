@@ -19,7 +19,7 @@ let data = [
     {
         title: "Musical Math",
         tags: ['Javascript', 'React', 'Tailwind CSS'],
-        summary: 'quick summary',
+        summary: 'Representing mathematics through music',
         info: [`description`],
         links: [
             ['Github', 'https://github.com/Dophin2009/mm'],
@@ -119,10 +119,12 @@ let data = [
     },
 ];
 
-data.forEach((project, index) => {
+data.forEach((project) => {
     // divider and title
     sec.appendChild(document.createElement("br"));
-    sec.appendChild(document.createElement("hr", {class:'hline'}));
+    let hline = document.createElement("hr");
+    hline.classList.add('hline');
+    sec.appendChild(hline);
     let title = document.createElement("h2");
     title.textContent = project.title;
     sec.appendChild(title);
