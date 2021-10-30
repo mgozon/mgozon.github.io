@@ -100,7 +100,9 @@ h3 {
 }
 
 .tags {
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
 }
 
@@ -110,6 +112,7 @@ h3 {
     padding: 0.2em 0.4em;
     border-radius: 0.2em;
     margin-right: 0.4em;
+    margin-bottom: 0.4em;
     color: white;
     font-size: 0.9em;
     font-weight: bold;
@@ -127,20 +130,23 @@ h3 {
     flex-wrap: wrap;
 }
 
-.project-description {
-    width: 60%;
-    border-right: 1em;
-}
-
-.project-image {
-    width: 40%;
-}
-
 .project-image-content {
     width: 100%;
 }
 
-@media (max-width: 50em) {
+@media (min-width: 800px) {
+    .project-description {
+        width: 60%;
+        border-right: 1em;
+    }
+
+    .project-image {
+        width: 40%;
+    }
+}
+
+
+@media (max-width: 800px) {
     .project-image {
         width: 100%;
     }
