@@ -32,10 +32,6 @@ footer {
     padding: 1em 0em;
 }
 
-h1 {
-    font-size: 2em;
-}
-
 nav {
     display: flex;
     flex-direction: row;
@@ -72,7 +68,6 @@ h2 {
 
 p {
     line-height: 1.5em;
-    font-size: 1em;
 }
 
 ul {
