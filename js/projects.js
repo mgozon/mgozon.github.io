@@ -173,18 +173,20 @@ data.forEach((project) => {
     info.classList.add('project-info');
     let desc = document.createElement("div");
     desc.classList.add('project-description');
+    let dcnt = document.createElement("div");
+    dcnt.classList.add('project-description-content');
     let img = document.createElement('div');
     img.classList.add('project-image');
 
     let summary = document.createElement('p');
     summary.textContent = project.summary;
     summary.classList.add('summary');
-    desc.appendChild(summary);
+    dcnt.appendChild(summary);
     project.info.forEach((paragraph) => {
         let paragraph_e = document.createElement('p');
         paragraph_e.textContent = paragraph;
-        desc.appendChild(paragraph_e);
-        desc.appendChild(document.createElement('br'));
+        dcnt.appendChild(paragraph_e);
+        dcnt.appendChild(document.createElement('br'));
     });
     let plinks = document.createElement('p');
     plinks.classList.add('plinks');
@@ -200,7 +202,9 @@ data.forEach((project) => {
         link_e.href = link[1];
         plinks.appendChild(link_e);
     });
-    desc.appendChild(plinks);
+    dcnt.appendChild(plinks);
+    dcnt.appendChild(document.createElement('br'));
+    desc.appendChild(dcnt);
     info.appendChild(desc);
     
     let imgContent = document.createElement('img');

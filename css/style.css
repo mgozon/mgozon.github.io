@@ -134,6 +134,8 @@ h3 {
     width: 100%;
 }
 
+
+
 @media (min-width: 800px) {
     .project-description {
         width: 60%;
@@ -142,6 +144,10 @@ h3 {
 
     .project-image {
         width: 40%;
+    }
+
+    .project-description-content {
+        padding-right: 1em;
     }
 }
 
@@ -152,6 +158,9 @@ h3 {
     }
     .project-description {
         width: 100%;
+    }
+    .project-description-content {
+        padding-right: 0em;
     }
 }
 
