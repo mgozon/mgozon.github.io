@@ -51,6 +51,21 @@ nav {
     text-decoration: underline;
 }
 
+.footlink {
+    text-decoration:none;
+    font-size: 1.0em;
+    color: gray;
+    padding: 0em 0.5em;
+}
+
+.footlink:hover {
+    text-decoration: underline;
+}
+
+.fldiv {
+    color: gray;
+}
+
 .mid-container {
     display: inline-block flex;
     flex-grow: 1;
